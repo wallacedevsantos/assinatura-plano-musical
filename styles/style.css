@@ -1,0 +1,135 @@
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    /* 1rem = 16px */
+}
+
+.content {
+    background: var(--blue-50);
+    max-width: 28rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.content .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 250px;
+    overflow: hidden;
+}
+
+.content .image img {
+    width: 100%;
+    height: auto;
+    position: center;
+}
+.wrapper {
+    padding: 2rem 3rem;
+    text-align: center;
+}
+
+.wrapper .text h2 {
+    color: var(--blue-900);
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.wrapper .text p {
+    color: var(--blue-desatured);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.wrapper .plan {
+    background: var(--blue-100);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.plans-option-mensal {
+    display: none;
+}
+
+.plans-option-trimestral {
+    display: none;
+}
+
+.plans-option-anual {
+    display: none;
+}
+
+.wrapper .plan .price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wrapper .plan .price span:first-child {
+    display: block;
+    color: var(--blue-900);
+    font-weight: 900;
+    margin-bottom: 0.3rem;
+}
+
+.wrapper .plan .price span:last-child {
+    color: var(--blue-desatured);
+    font-weight: 500;
+}
+
+.wrapper .plan a {
+    color: var(--blue-600);
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.wrapper .plan a:hover {
+    color: var(--blue-300);
+}
+
+.wrapper .payment-order {
+    width: 100%;
+    background-color: var(--blue-600);
+    border: 0;
+    border-radius: 0.5rem;
+    color: var(--blue-50);
+    font-weight: 700;
+    padding: 0.8rem 0.7rem;
+    transition: background 0.2s;
+    box-shadow: var(--blue-300) 0px 10px 13px -7px, 0px 5px 26px 8px;
+    margin-bottom: 2rem;
+}
+
+.wrapper .payment-order:hover {
+    background: var(--blue-500);
+}
+
+.wrapper a {
+    color: var(--blue-desatured);
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.wrapper a:hover {
+    color: var(--blue-900);
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper .plan .price img {
+        display: none;
+    }
+    .wrapper .plan {
+        height: 150px;
+    }
+    .wrapper .plan .price {
+        flex-direction: column;
+    }
+}

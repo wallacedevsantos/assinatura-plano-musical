@@ -1,0 +1,49 @@
+:root {
+  --blue-50: hsl(225, 100%, 98%);
+  --blue-100: hsl(225, 100%, 96%);
+  --blue-200: hsl(225, 100%, 94%);
+  --blue-300: hsl(225, 100%, 70%);
+  --blue-500: hsl(225, 100%, 65%);
+  --blue-600: hsl(245, 75%, 52%);
+  --blue-900: hsl(223, 47%, 23%);
+  --blue-desatured: hsl(224, 23%, 55%);
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: var(--blue-200);
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

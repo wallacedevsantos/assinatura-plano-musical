@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Inicio da importação das fontes -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fim da importação das fontes -->
+
+    <link
+      rel="shortcut icon"
+      href="./public/images/favicon-32x32.png"
+      type="image/png"
+    />
+
+    <!-- Inicio da importação dos arquivos css -->
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Fim da importação dos arquivos css -->
+
+    <!-- Script para trocar plano-->
+    <script defer src="./javascript/script.js"></script>
+    <!-- Fim Script para trocar plano-->
+
+    <title>Order Summary</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="content">
+        <div class="image">
+          <img
+            src="./public/images/music-phone-unsplash.jpg"
+            alt="girl listening music"
+          />
+        </div>
+
+        <div class="wrapper">
+          <div class="text">
+            <h2>Escolha seu plano</h2>
+            <p>
+              Agora você pode ouvir milhões de músicas, audiolivros e podcasts em qualquer dispositivo em qualquer lugar que desejar!
+            </p>
+          </div>
+
+          <div class="plan">
+            <div class="price">
+              <img src="./public/images/icon-music.svg" />
+
+              <div class ="plans-option">
+                <span>Music Premium</span>
+                <span>Escolha seu plano</span>
+              </div>
+              <div class="plans-option-mensal">
+                <span>Plano Mensal</span>
+                <span>R$29,99/mensal</span>
+              </div>
+              <div class ="plans-option-trimestral">
+                <span>Plano Trimestral</span>
+                <span>R$59,99/trimestral</span>
+              </div>
+              <div class ="plans-option-anual">
+                <span>Plano Anual</span>
+                <span>R$149,99/anual</span>
+              </div>
+
+            <div class="trocar-planos">
+            
+              <div id="trocar_mensal">
+                <a href="#">Mensal</a>
+              </div>
+              <div id="trocar_trimestral">
+                <a href="#">Trimestral</a>
+              </div>
+              <div id="trocar_anual">
+                <a href="#">Anual</a>
+              </div>
+
+            </div>
+          </div>
+          </div>
+
+          <button class="payment-order">Assinar Plano</button>
+
+          <a href="#">Cancelar Pedido</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
